@@ -19,5 +19,5 @@ Proyecto de calculadora en PHP con pruebas unitarias PHPUnit y pipeline de CI en
 
 ## Integrantes
 
-- Nombre completo integrante 1
-- Nombre completo integrante 2
+- Nombre completo integrante 1 luz adriana chocue 
+- Nombre completo integrante 2 eyder andres acalo
