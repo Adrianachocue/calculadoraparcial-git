@@ -1,5 +1,7 @@
 # Calculadora CI
 
+[![PHP Continuous Integration](https://github.com/Adrianachocue/calculadoraparcial-git/actions/workflows/php-ci.yml/badge.svg?branch=master)](https://github.com/Adrianachocue/calculadoraparcial-git/actions/workflows/php-ci.yml)
+
 ## GitHub Actions CI
 
 ## Enlace público del repositorio
