@@ -6,7 +6,7 @@
 
 ## Enlace público del repositorio
 
-https://github.com/USUARIO/REPOSITORIO
+https://github.com/Adrianachocue/calculadoraparcial-git.git
 
 ## Descripción
 
