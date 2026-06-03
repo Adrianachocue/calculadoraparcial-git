@@ -75,14 +75,14 @@ if ($operacionActual !== '') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Bonita</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="page-background">
         <div class="calculator-shell">
             <header class="calculator-header">
-                <h1>Calculadora Bonita</h1>
+                <h1>Calculadora</h1>
                 <p>Utiliza el panel para ingresar los valores y ver el resultado claro.</p>
             </header>
 

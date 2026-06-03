@@ -26,6 +26,19 @@ Abrir el proyecto en Visual Studio Code.
 Instalar las dependencias con:
 - Ejecutar `composer install`
 
+## Ejecución local
+Para ver la calculadora en el navegador:
+1. Abrir una terminal en la carpeta del proyecto.
+2. Ejecutar exactamente este comando en PowerShell:
+
+   php -S 127.0.0.1:8000
+
+3. Abrir en el navegador:
+
+   http://127.0.0.1:8000
+
+> No incluyas guiones, backticks ni comillas. Escribe solo el comando anterior.
+
 ## ejecucion de pruebas
 - Ejecutar `./vendor/bin/phpunit tests`
  
