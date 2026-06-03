@@ -20,16 +20,19 @@ Git
 GitHub
 GitHub Actions
 
+## Objetivo del parcial
+Este proyecto muestra el uso de PHP con Composer, pruebas unitarias con PHPUnit y un flujo de Integración Continua con GitHub Actions.
+
 ## Instrucciones
-Clonar el repositorio.
-Abrir el proyecto en Visual Studio Code.
-Instalar las dependencias con:
-- Ejecutar `composer install`
+1. Clonar el repositorio.
+2. Abrir el proyecto en Visual Studio Code.
+3. Instalar las dependencias con:
+   - `composer install`
 
 ## Ejecución local
 Para ver la calculadora en el navegador:
 1. Abrir una terminal en la carpeta del proyecto.
-2. Ejecutar exactamente este comando en PowerShell:
+2. Ejecutar este comando en PowerShell:
 
    php -S 127.0.0.1:8000
 
@@ -37,11 +40,16 @@ Para ver la calculadora en el navegador:
 
    http://127.0.0.1:8000
 
-> No incluyas guiones, backticks ni comillas. Escribe solo el comando anterior.
-
-## ejecucion de pruebas
+## Ejecución de pruebas
 - Ejecutar `./vendor/bin/phpunit tests`
- 
+
+## Integración Continua
+El workflow de GitHub Actions está en `.github/workflows/php-ci.yml` y ejecuta:
+- checkout del repositorio
+- configuración de PHP 8.2
+- instalación de dependencias con Composer
+- ejecución de PHPUnit
+
 ## Estructura del proyecto
 src/: Código fuente de la calculadora.
 tests/: Pruebas unitarias.
