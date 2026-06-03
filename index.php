@@ -52,6 +52,23 @@ function safeValue(string $key): string
 {
     return isset($_POST[$key]) ? htmlspecialchars((string) $_POST[$key], ENT_QUOTES, 'UTF-8') : '';
 }
+
+function operationSymbol(string $operation): string
+{
+    return match ($operation) {
+        'sumar' => '+',
+        'restar' => '−',
+        'multiplicar' => '×',
+        'dividir' => '÷',
+        default => '',
+    };
+}
+
+$operacionActual = safeValue('operacion');
+$expresionVisible = '';
+if ($operacionActual !== '') {
+    $expresionVisible = trim(safeValue('valorA') . ' ' . operationSymbol($operacionActual) . ' ' . safeValue('valorB'));
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -65,9 +82,14 @@ function safeValue(string $key): string
     <div class="page-background">
         <div class="calculator-shell">
             <header class="calculator-header">
-                <h1>Calculadora</h1>
-                <p>Escoge tus números y pulsa el botón de operación.</p>
+                <h1>Calculadora Bonita</h1>
+                <p>Utiliza el panel para ingresar los valores y ver el resultado claro.</p>
             </header>
+
+            <div class="display-panel">
+                <div class="display-value"><?= $result !== null ? htmlspecialchars((string) $result, ENT_QUOTES, 'UTF-8') : '0' ?></div>
+                <div class="display-subtext"><?= htmlspecialchars($expresionVisible !== '' ? $expresionVisible : 'Ingresa tus números y elige una operación', ENT_QUOTES, 'UTF-8') ?></div>
+            </div>
 
             <?php if ($error !== null): ?>
                 <div class="message error"><?= htmlspecialchars($error, ENT_QUOTES, 'UTF-8') ?></div>
