@@ -2,20 +2,36 @@
 
 ## GitHub Actions CI
 
-![PHP Continuous Integration](https://github.com/USUARIO/REPOSITORIO/actions/workflows/php-ci.yml/badge.svg)
-
 ## Enlace público del repositorio
 
 https://github.com/Adrianachocue/calculadoraparcial-git.git
 
 ## Descripción
 
-Proyecto de calculadora en PHP con pruebas unitarias PHPUnit y pipeline de CI en GitHub Actions.
+Proyecto desarrollado en PHP que implementa una calculadora básica con operaciones aritméticas. El proyecto incluye pruebas unitarias utilizando PHPUnit y un flujo de Integración Continua (CI) mediante GitHub Actions para validar automáticamente el funcionamiento del código.
+
+## Tecnologias utilizadas
+PHP
+Composer
+PHPUnit
+Git
+GitHub
+GitHub Actions
 
 ## Instrucciones
-
+Clonar el repositorio.
+Abrir el proyecto en Visual Studio Code.
+Instalar las dependencias con:
 - Ejecutar `composer install`
+
+## ejecucion de pruebas
 - Ejecutar `./vendor/bin/phpunit tests`
+ 
+## Estructura del proyecto
+src/: Código fuente de la calculadora.
+tests/: Pruebas unitarias.
+vendor/: Dependencias instaladas por Composer.
+.github/workflows/: Configuración de GitHub Actions.
 
 ## Integrantes
 
