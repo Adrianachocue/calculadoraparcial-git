@@ -28,6 +28,11 @@ function setOperation(operation) {
     if (activeButton) {
         activeButton.classList.add('active');
     }
+
+    const form = document.getElementById('calculator-form');
+    if (form) {
+        form.submit();
+    }
 }
 
 function getSymbol(operation) {
