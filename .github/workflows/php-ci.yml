@@ -1,9 +1,9 @@
 name: PHP Continuous Integration
 on:
   push:
-    branches: [ "main", "desarrollo" ]
+    branches: [ "main", "desarrollo", "master" ]
   pull_request:
-    branches: [ "main", "desarrollo" ]
+    branches: [ "main", "desarrollo", "master" ]
 jobs:
   build-and-test:
     runs-on: ubuntu-latest

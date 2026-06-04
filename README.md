@@ -40,8 +40,16 @@ Para ver la calculadora en el navegador:
 
    http://127.0.0.1:8000
 
+> Si el servidor no arranca por el puerto 8000, prueba con:
+>
+>   php -S 127.0.0.1:8080
+>
+> y luego abre:
+>
+>   http://127.0.0.1:8080
+
 ## Ejecución de pruebas
-- Ejecutar `./vendor/bin/phpunit tests`
+- Ejecutar `.\vendor\bin\phpunit tests` en PowerShell
 
 ## Integración Continua
 El workflow de GitHub Actions está en `.github/workflows/php-ci.yml` y ejecuta:
